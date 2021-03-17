@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+     <link rel="stylesheet" href="css/index.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta property="fb:app_id" content="859491851234128"/>
+       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <script>
+        $(function(){
+            $('button').click(function(){
+                $('.lend').load('doc/test.html', function() {
+                     // alert('Nội dung đã được load.');
+                });
+            }); 
+        });
+        </script>
+  <script>
+$(document).ready(function(){
+  $("h3").add("span").css("background-color", "yellow");
+});
+</script>
+</head>
+<body>
+	<header>
+		<div>
+			<img src="images/logo2.jpg" alt="">
+		</div>
+		
+			<nav id="menu">
+		<ul>
+			<li><a href="index.html">TRANG CHỦ</a></li>
+			<li><a href="dulich.html">TOUR TRONG NƯỚC</a></li>
+			<li><a href="toru.html">TOUR NƯỚC NGOÀI</a></li>
+			<li><a href="">DỊCH VỤ DU LỊCH</a></li>
+			<li><a href="dk.html">LIÊN HỆ</a></li>
+			
+		</ul>
+	<i class="fa fa-search" aria-hidden="true"></i>
+		</nav>
+		
+	</header>
+	<section>
+		<div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <img src="images/c1.png" style="width:100%">
+          <div class="text"><!-- <pre>Đặt Phòng Khách Sạn Trong Nước
+Linh Hoạt, Nhiều Ưu Đãi</pre> --></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/ca.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/c2.png" style="width:100%">
+          <div class="text"></div>
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>  
+    </body>
+    <script>
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 3000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
+
+	
+	</section>
+	
+		<h2>Các Tour Du Lịch</h2>
+		<!-- <p id="center">Du lịch ngắn ngày như các tour đi các tỉnh miền Tây khởi hành từ Tp.HCM được tổ chức thường xuyên khởi hành các ngày trong tuần.</p> -->
+		<hr>
+
+	
+	<article>
+		<div class="main-blook">
+		<div class="main_ima">
+
+			<img src="images/thumb.png" alt="">
+		</div>
+
+					<div class="main_right"><p>
+		<h4>Qua miền trái cây Nam Bộ</h4>
+		Nếu bạn hỏi tôi mùa nào trái cây Nam bộ nhiều nhất, tôi sẽ trả lời bạn là quanh năm, đơn giản vì trái cây ở đây không có mùa. Bạn đã bao giờ được thưởng thức quýt hồng Lai Vung, sơ ri Gò Công, sầu riêng Cái Mơn, chôm chôm Vĩnh Long? Nếu chưa thì hãy đi du lịch miệt vườn miền…</p><br><br>
+		<span>TIME: 80:00 Mỗi Ngày</span><div class="lend" id="lend"></div>
+		</div>
+		</div>
+
+	</article> 
+	<!-- <article>
+					<div class="main-blook">
+					<div class="main_ima">
+						<img src="images/thum.jpg" alt=""></div>
+						<div class="main_right"><p>
+			<h3>Qua miền tây hương phù sa</h3>
+			Ôm ấp trong lòng những dòng sông đỏ nặng phù sa, miền châu thổ từ lâu nổi tiếng với những điệu hò ngọt ngào sâu lắng. Kỳ nghỉ lễ 30/4 năm nay, mời bạn du lịch miệt vườn miền Tây, ghé thăm vườn trái cây sum xuê, gặp người dân chất phác… để thấy yêu hơn một vùng đất hiền hòa…</p><br><br>
+			<span>TIME: 11:00 Mỗi Ngày</span>
+			</div>
+			</div>
+
+	</article>  -->
+	<article>
+		<div class="main-blook">
+		<div class="main_ima">
+			<img src="images/th.jpg" alt="">
+		</div>
+			<div class="main_right"><p>
+			<h4>Đà Lạt mộng mơ</h4>
+			Nếu bạn hỏi tôi mùa nào trái cây Nam bộ nhiều nhất, tôi sẽ trả lời bạn là quanh năm, đơn giản vì trái cây ở đây không có mùa. Bạn đã bao giờ được thưởng thức quýt hồng Lai Vung, sơ ri Gò Công, sầu riêng Cái Mơn, chôm chôm Vĩnh Long? Nếu chưa thì hãy đi du lịch miệt vườn miền…</p><br><br>
+			<span>TIME: 90:00 Mỗi Ngày</span>
+			</div>
+			</div>
+
+	</article> 
+
+	<aside>
+		<h2>Tour Khuyến Mãi</h2><hr>
+		<div class="left">
+			<img src="images/cap.png" alt="">
+			<p>Giá trọn gói từ 5.190.000Đ/ Khách</p><br>
+             <pre>Tour lễ 30/4 & 1/5 nước ngoài         có 6tour
+Tour Đài Loan                         có 3tour</pre><br>
+<h3>DU LỊCH ĐÀ LOAN</h3>
+         
+			<button>Mua Tour</button>
+		</div>
+
+		<div class="right">
+			<img src="images/capt.png" alt="">
+			<p>Giá trọn gói từ 5.190.000Đ/ Khách</p><br>
+             <pre>Tour lễ 30/4 & 1/5 nước ngoài         có 6tour
+Tour Đài Loan                         có 3tour</pre><br>
+<h3>DU LỊCH NAM PHI</h3>
+         
+			<button>Mua Tour</button>
+		</div>
+
+		<div class="top">
+			<img src="images/moi.png" alt="">
+			<p>Giá trọn gói từ 5.190.000Đ/ Khách</p><br>
+             <pre>Tour lễ 30/4 & 1/5 nước ngoài         có 6tour
+Tour Đài Loan                         có 3tour</pre><br>
+<h3>DU LỊCH PHÚ QUỐC</h3>
+         
+			<button>Mua Tour</button>
+		</div>
+
+	</aside>
+
+	<main>
+		<div class="test1">
+			<img id="myImg" src="images/qc.png" alt="Snow" >
+		<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("myImg");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+	</script>
+		</div>
+
+		<div class="test2">
+			<img id="myImg" src="images/cq.png" alt="Snow" >
+			<img id="myImg" src="images/va.png" alt="Snow" >
+		</div>
+
+		<!-- <div class="test3">
+			
+		</div> -->
+		
+
+	</main>
+
+	<footer>
+		<div class="book">
+		<div class="book2">
+			<p>Lữ hành VietNamtourist, thương hiệu lữ hành hàng đầu Việt Nam<br>
+		Thương hiệu quốc gia</p><br>
+		<img src="images/pri.png" alt=""><br><br>
+		<p>Tổng đài: 1900 1808<br>
+
+		Email: info@vietnamtourist.net</p>
+				</div>
+		<div class="book3">
+			<p><b>DỊCH VỤ</b><br><br>
+		Tour trong nước<br>
+		Tour nước ngoài<br>
+		Vé máy bay<br>
+		Thuê xe<br>
+		Tuyển dụng<br>
+		Du học<br>
+		Mua Bảo hiểm Du lịch</p>
+		</div>
+		<div class="book4">
+			<p><b>CHĂM SÓC KHÁCH HÀNG</b><br><br>
+			Travel Voucher<br>
+			Bảo hiểm Du lịch<br>
+			Ý kiến khách hàng<br>
+			Phiếu góp ý<br>
+			Chương trình<br>
+			Thắp sáng Niềm Tin
+		</div>
+		<div class="book5">
+			<p><b>LIÊN HỆ</b></p><br><br>
+			Giới thiệu<br>
+			Liên hệ<br>
+			Chi nhánh<br>
+			Quy định bảo vệ<br>
+			Điều khoản chung<br>
+			Hướng dẫn mua tour online<br>
+			Quy định thanh toán<br>
+			Chính sách giao nhận<br>
+			Chính sách hủy phạt<br>
+			Chính sách bảo mật<br>
+			Tuyển dụng<br>
+		</div>
+	</div>
+		<div id="bootom">
+			<p>
+				Bản quyền 2006 - 2021 © Công ty TNHH Một Thành Viên Dịch vụ Lữ hành Saigontourist.<br>
+				36 Xuân Thủy, Cầu Giấy, Hà Nội.<br><br>
+
+				ĐT:  (84-28) 38 279 279 - Fax: (84-28) 38 224 987. <br>
+				Số đăng ký kinh doanh: 0310891532 do Sở kế hoạch và đầu tư TPHN cấp ngày 07/03/2021, cấp/thay đổi lần thứ 10.<br>
+				Giấy phép kinh doanh Dịch vụ Lữ hành Quốc tế: 79-300/2018 / TCDL-GP-LHQT<br>
+				Người đại diện: Bà Doãn Thị Nhàn.<br><br>
+					<strong>TƯ VẤN & ĐẶT DỊCH VỤ: 1900 1808</strong><br>
+					Website VIETNAMTOURIST.NET đã được đăng ký với Bộ Công Thương
+
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
